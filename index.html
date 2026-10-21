@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE MODEL | Modeling Studio</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header" id="inicio">
+    <a class="logo" href="#inicio"><span>♕</span> THE MODEL <small>MODELING STUDIO</small></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Sobre nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">BIENVENIDOS A</p>
+        <h1>THE MODEL</h1>
+        <h2>Más que un sueño, es una actitud.</h2>
+        <p>Un espacio donde la expresión, la creatividad y la seguridad se unen para crear imágenes únicas. Aquí el modelaje no solo se trata de apariencia, sino de talento, personalidad y confianza.</p>
+        <a class="btn" href="#servicios">Conoce más →</a>
+      </div>
+      <div class="hero-image">
+        <img src="./hero-model.png" alt="Imagen editorial de The Model">
+      </div>
+    </section>
+
+    <section class="section about" id="nosotros">
+      <p class="eyebrow">SOBRE NOSOTROS</p>
+      <h2>Una plataforma para expresarte</h2>
+      <p>THE MODEL es un concepto digital dedicado a presentar diferentes áreas del modelaje y la creatividad. La página reúne información, inspiración, servicios y una forma sencilla de solicitar una sesión.</p>
+      <div class="stats">
+        <div><strong>05</strong><span>Áreas creativas</span></div>
+        <div><strong>01</strong><span>Estilo propio</span></div>
+        <div><strong>∞</strong><span>Posibilidades</span></div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicios">
+      <p class="eyebrow">NUESTROS SERVICIOS</p>
+      <h2>Diferentes estilos, una misma esencia</h2>
+      <div class="cards">
+        <article class="card" data-service="Modelaje Fotográfico">
+          <div class="icon">◉</div><h3>Modelaje Fotográfico</h3><p>Sesiones pensadas para crear imágenes con personalidad y creatividad.</p>
+          <button class="more-btn">Ver detalles</button>
+        </article>
+        <article class="card" data-service="Modelaje Artístico">
+          <div class="icon">✦</div><h3>Modelaje Artístico</h3><p>Una forma de combinar expresión, arte y presencia frente a la cámara.</p>
+          <button class="more-btn">Ver detalles</button>
+        </article>
+        <article class="card" data-service="Modelaje de Imagen">
+          <div class="icon">◇</div><h3>Modelaje de Imagen</h3><p>Proyección de estilo, seguridad y una identidad visual propia.</p>
+          <button class="more-btn">Ver detalles</button>
+        </article>
+        <article class="card" data-service="Pasarela">
+          <div class="icon">⌁</div><h3>Pasarela</h3><p>Introducción al mundo de la pasarela, actitud y expresión corporal.</p>
+          <button class="more-btn">Ver detalles</button>
+        </article>
+        <article class="card" data-service="Sesiones Fotográficas">
+          <div class="icon">✧</div><h3>Sesiones Fotográficas</h3><p>Ideas para capturar momentos y conceptos visuales únicos.</p>
+          <button class="more-btn">Ver detalles</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <p class="eyebrow">GALERÍA</p>
+      <h2>Inspiración visual</h2>
+      <div class="filters">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="editorial">Editorial</button>
+        <button class="filter" data-filter="arte">Artístico</button>
+        <button class="filter" data-filter="pasarela">Pasarela</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item editorial"><img src="./hero-model.png" alt="Editorial"><span>Editorial</span></div>
+        <div class="gallery-item arte"><img src="./hero-model.png" alt="Artístico"><span>Artístico</span></div>
+        <div class="gallery-item pasarela"><img src="./hero-model.png" alt="Pasarela"><span>Pasarela</span></div>
+      </div>
+    </section>
+
+    <section class="section quote">
+      <p>“La verdadera presencia comienza cuando encuentras tu propia forma de expresarte.”</p>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div>
+        <p class="eyebrow">CONTACTO</p>
+        <h2>¿Quieres formar parte?</h2>
+        <p>Completa el formulario para solicitar información sobre una sesión o conocer más sobre nuestros servicios.</p>
+      </div>
+      <form id="contactForm">
+        <input id="name" type="text" placeholder="Tu nombre" required>
+        <input id="email" type="email" placeholder="Tu correo" required>
+        <select id="service" required>
+          <option value="">Selecciona un servicio</option>
+          <option>Modelaje Fotográfico</option>
+          <option>Modelaje Artístico</option>
+          <option>Modelaje de Imagen</option>
+          <option>Pasarela</option>
+          <option>Sesiones Fotográficas</option>
+        </select>
+        <textarea id="message" rows="4" placeholder="Cuéntanos qué necesitas" required></textarea>
+        <button class="btn" type="submit">Enviar solicitud</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">♕ THE MODEL <small>MODELING STUDIO</small></div>
+    <p>© 2026 THE MODEL. Proyecto web académico.</p>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <p class="eyebrow">THE MODEL</p>
+      <h2 id="modalTitle">Servicio</h2>
+      <p id="modalText">Información del servicio.</p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
