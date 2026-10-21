@@ -1,0 +1,3 @@
+Mi nombre es Marianny Pérez Toribio y soy estudiante de Informática.
+
+Este repositorio forma parte de mi práctica de introducción a GitHub. Estoy aprendiendo a organizar archivos, registrar cambios y compartir proyectos informáticos.
